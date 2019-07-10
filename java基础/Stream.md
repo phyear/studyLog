@@ -64,21 +64,7 @@ random.ints().limit(20).sorted().forEach(System.out::println);
         System.out.println("平均数 : " + stats.getAverage());
 ```
 ![](img/StremCount.png)
-# Gson解析和使用
 
-# HttpClient/框架
-
-# Socket
-
-# I/O
-
-# NI/O
-
-# JDBC批处理
-
-# 线程Thred
-
-# 线程池
 
 
 
