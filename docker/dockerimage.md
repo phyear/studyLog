@@ -6,12 +6,13 @@
 * 端口
 * 中间件
 docker可以来创建和管理
-
+>这里现在只是window10下安装docker，注意建议系统是家庭版的改换为企业版或者专业版
 
 >docker安装：
 https://github.com/AliyunContainerService/k8s-for-docker-desktop
 windows版最新：
 https://hub.docker.com/editions/community/docker-ce-desktop-windows
+
 ## docker指令
 
 > docker version
@@ -47,7 +48,7 @@ docker run -d -p 3301:3306 -e mysql
 
 docker run -di --name pinyougou_mysql -p 33306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
 
->docker exec -it 容器 路径 //进入容器内部
+>docker exec -it 容器 bash //进入容器内部
 
 >docker top id/name //容器内部信息
 
@@ -55,6 +56,7 @@ docker run -di --name pinyougou_mysql -p 33306:3306 -e MYSQL_ROOT_PASSWORD=12345
 
 >docker stop  id/name //关闭容器
 ## 镜像加速器
+可以直接点小鲸鱼图标->setting->Daemon 设置
 ```
 {		
     "registry-mirrors":	[			
