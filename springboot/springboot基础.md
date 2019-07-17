@@ -190,12 +190,70 @@ maven:
   @Value("${maven.path}")
   private String myUrl;
 
-  //通过获取@ConfigurationProperties
+maven.path=aaaa
 
-@ConfigurationProperties(prefix = "maven.path")
-publicclass MongoProperties {}
+在resource文件夹下新建目录code，code.properties里面填充内容
+valiade.code=1321312
+valiade.name=撒打算
+
+
+//通过获取@ConfigurationProperties
+package com.hand.test.springbootdemo.prop;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
+@Component
+@ConfigurationProperties(prefix = "valiade")
+@PropertySource(value ={"classpath:code/code.properties"},encoding ="utf-8")
+public class ValiadeCode {
+    private String name;
+
+    private int code;
+    
+    @Value("${maven.path}")
+    private String path;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    @Override
+    public String toString() {
+        return "ValiadeCode{" +
+                "name='" + name + '\'' +
+                ", code=" + code +
+                ", path='" + path + '\'' +
+                '}';
+    }
+}
+
 ```
-依赖jar：
+
+
+
+>依赖jar：
 ```
 <!--spring-boot-configuration:spring boot 配置处理器; -->
 
