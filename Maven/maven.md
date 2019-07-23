@@ -32,9 +32,9 @@
 
 
 ## maven的pom文件介绍
- *  modelVersion
+* modelVersion
  指定了当前Maven模型的版本号，对于Maven2和Maven3来说，它只能是4.0.0 
- *  groupId
+* groupId
  groupId一般由三个部分组成，每个部分之间以”.”分隔,第一部分是项目用途,比如用于商业的就是”com”,用于非营利性组织的就　　是”org”；第二部分是公司名，比如”hand”;第三部分是你的项目名 
 * artifactId 
 　　Maven构建的项目名，比如你的项目中有子项目，就可以使用”项目名-子项目名”的命名方式 
@@ -51,8 +51,8 @@
 </properties>
  ```
  * build
-  build表示与构建相关的配置，在这里面也可以引用一些插件
-  如：maven-compiler-plugin
+   build表示与构建相关的配置，在这里面也可以引用一些插件
+   如：maven-compiler-plugin
 
 
 

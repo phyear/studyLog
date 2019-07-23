@@ -162,7 +162,7 @@ public class SpringbootIn10StepsApplication {}
 ```
 配置多个路径：
 ```
-@ComponentScan("com.in28minutes.springboot")
+@ComponentScan({"com.in28minutes.springboot","com.in28minutes.boob"})
 @SpringBootApplication
 public class SpringbootIn10StepsApplication {}
 ```
