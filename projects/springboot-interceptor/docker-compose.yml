@@ -1,0 +1,9 @@
+version: '3'
+services:
+     javas:
+        build: ./docker/java/
+        container_name: javak
+        ports:
+           - "8080:8080"
+              
+         
