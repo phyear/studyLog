@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<body>
+<table>
+    <thead>
+    <tr><td>文件名</td><td>路径</td><td>操作</td></tr>
+
+    </thead>
+    <tbody>
+     <tr th:each="file:${files}">
+         <td th:text="${fileStat.index+1}">/td><td th:text="${file}"></td><td><a th:href="${'/downLoadFile?path='+file}">下载</a></td>
+     </tr>
+
+    </tbody>
+
+</table>
+
+</body>
+</html>

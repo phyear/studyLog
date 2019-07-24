@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <a th:href="@{/addFile}"  th:text="#{message.upload}">上传文件</a>
+ <a th:href="@{/addFiles}" th:text="#{message.uploads}">上传文件</a>
+ <a th:href="@{/downLoad}" th:text="#{message.look}">下载列表</a> <br>
+
+ <a th:href="@{/?lang=zh_CN}">中文</a><a th:href="@{/?lang=en_US}">English</a>
+</body>
+</html>
