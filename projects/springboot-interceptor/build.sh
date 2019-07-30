@@ -2,6 +2,6 @@ mvn clean
 
 mvn package
 
-cp target/test.jar docker/java/
+cp -f target/test.jar docker/java/
 
 docker-compose up -d
