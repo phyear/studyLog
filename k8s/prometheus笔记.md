@@ -80,10 +80,10 @@ helm install --name my-release c7n/prometheus-operator
 |------|------|-------|
 | `grafana.adminPassword` | 登录grafana UI的管理员密码 |  `true` |
 | `grafana.ingress.hosts` | Grafana  的 域名 |  `true` |
-| `grafana.grafana.ini.server.root_url` |root的地址(如：http://grafana.staging.saas.hand-china.com) |  `true` |
-| `grafana.grafana.ini.auth.generic_oauth.auth_url` | 权限服务器授权地址（如：http://api.staging.saas.hand-china.com/oauth/oauth/authorize） |  `true` |
-| `grafana.grafana.ini.auth.generic_oauth.token_url` | 权限服务器获取token（如：http://api.staging.saas.hand-china.com/oauth/oauth/token） |  `true` |
-| `grafana.grafana.ini.auth.generic_oauth.api_url` | 权限服务器api地址（如：http://api.staging.saas.hand-china.com/iam/v1/users/self） |  `true` |
+| `grafana.grafana.ini.server.root_url` |root的地址 |  `true` |
+| `grafana.grafana.ini.auth.generic_oauth.auth_url` | 权限服务器授权地址 |  `true` |
+| `grafana.grafana.ini.auth.generic_oauth.token_url` | 权限服务器获取token（ |  `true` |
+| `grafana.grafana.ini.auth.generic_oauth.api_url` | 权限服务器api地址 |  `true` |
 | `grafana.persistence.storageClassName` | grafana 存储定义,指定集群中已创建的存储类的name | `true`|
 | `grafana.serviceMonitor.relabelings` | grafana 实例收集的 `relabel_configs` 配置，需要修改 `cluster` 标签的replacement 为目标集群名 | `true`|
 
